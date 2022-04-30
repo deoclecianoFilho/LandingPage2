@@ -9,7 +9,8 @@ html,body{
 	height: 100%;
 }
 body{
- 	background-image: linear-gradient(to right,#140128 0%, #472562 70%,  #8d7691 100%);
+ 	/* background-image: linear-gradient(to right,#140128 0%, #472562 70%,  #8d7691 100%); */
+	 background-color: white;
 }
 
 .container{
@@ -25,7 +26,7 @@ header{
 	width: 100%;
 	height: 90vh;
 	padding:40px 2%;
-	/* max-height: 700px; */
+	max-height: 700px;
 	background-size: cover;
 	background-position: center;
 	background-image: url('../IMG/capa.png');
@@ -67,10 +68,12 @@ header li a{
 .chamada1{
 	max-width: 600px;
 	float: right;
-	margin:140px 150px;
+	margin:140px  300px;
+	text-align: center;
 }
 
 .chamada1 h2{
+	width: 100%;
 	font-size: 40px;
 	color: white;
 }
@@ -82,6 +85,7 @@ header li a{
 }
 
 section.sessao1{
+	background-image: linear-gradient(to right,#140128 0%, #472562 70%,  #8d7691 100%);
 	z-index: 1;
 	width: 100%;
 	padding: 0 2%;
@@ -151,7 +155,7 @@ section .sessao1 .container{
 }
 
 section.sessao2{
-	
+	background-color: #fff;
 	z-index: 2;
 	width: 100%;
 	padding: 0 2%;
@@ -171,28 +175,291 @@ section.sessao2{
 
 .sessao2 p{
 	margin: 30px 0;
+	padding-bottom: 80px;
 	max-width: 900px;
 	display: inline-block;
 }
 
 .sessao2 .container{
+	width: 100%;
 	text-align: center;
 	max-width: 1000px;
 }
 
-.sessao2 .img{
-	padding-bottom: 40px;
-	margin: 40 0px;
-	height: 400px;
+.img img{
+	float: none;
+	position: relative;
+	margin-top: -100px;
+	height: 25em;
 	width: 80%;
 	text-align: center;
-	background-image: url(../IMG/coding-man.jpg);
+	/* background-image: url(../IMG/Code-man.jpg);
 	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-repeat: no-repeat; */
 }
 
-@media screen and(max-width: 830px) {
+
+section.sessao3{
+	width: 100%;
+	/* margin-top: 20px; */
+	background-color: #fff;
+}
+
+.sessao3 .part1{
+	/* color: #140128; */
+	/* color: #fff; */
+	float: left;
+	width: 50%;
+	padding: 150px 0 115px 0;
+	background-color: #8EC5FC;
+	background-image: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
+	background-image: linear-gradient(to bottom, #d7d2cc 0%, #140128);
+	
+}
+
+.wraper-part1{
+	max-width: 600px;
+	float: right;
+	padding-right: 0 30px;
+	
+}
+
+.sessao3 .wraper-part1 h2{
+
+	margin-top: 30px;
+	margin-left: 30px;
+	/* font-weight: 500; */
+	font-style: italic;
+	font-style: bold;
+	font-size: 23px;
+}
+
+.sessao3 .wraper-part1 p{
+	color: white;
+	font-size: 15px;
+	line-height: 30px;
+	margin: 20px;
+	font-weight: 400;
+	/* max-width: 500px; */
+	display: inline-block;
+}
+
+
+.part2{
+	max-width: 600px;
+	float: left;
+	width: 50%;
+	padding: 180px 10px 70px 30px;
+	/* background-color: white; */
+	/* background: #304352; 
+	background: -webkit-linear-gradient(to right, #d7d2cc, #304352);  /* Chrome 10-25, Safari 5.1-6 */
+	/* background: linear-gradient(to right, #d7d2cc, #304352); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+	background-color: white;
+}
+
+.sobre-autor{
+	/* color: #140128; */
+	float: left;
+	width: 100%;
+	/* max-width: 600px; */
+	padding-left: 30px;
+	/* background-color: red; */
+}
+
+.titulo-autor {
+	float: left;
+	width: 100%;
+}
+
+.wraper-titulo-autor{
+	/* width: calc(100% - 40px); */
+	float: left;
+}
+
+.titulo-autor h2{
+	/* float: right; */
+	/* padding-right: 20px; */
+	color: #140128;
+}
+
+.titulo-autor p{
+	font-size: 15px;
+	font-weight: 400;
+	color: #232323;
+	font-style: italic;
+}
+
+.titulo-autor .img-autor{
+	float: left;
+	width: 60px;
+	height: 60px;
+	position: relative;
+	top: -3px;
+	margin-left: 10px;
+	border-radius: 30px;
+	background-image: url(../IMG/deo.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.texto-autor{
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+	
+}
+
+.slider-bullets{
+	width: 100%;
+	float: left;
+	padding-left: 30px;
+	margin-top: 12px;
+}
+
+.slider-bullets span{
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 8px;
+	cursor: pointer;
+	border-radius: 8px;
+	background-color: #ccc;
+}
+
+section.sessao4{
+	background-image: linear-gradient(to left,#140128 0%, #472562 70%,  #8d7691 100%);
+	padding: 100px 0;
+}
+
+.form{
+	float: left;
+	width: 50%;
+	color: #fff;
+	padding-left: 10px;
+}
+
+.form form{
+	margin-top: 15px;
+}
+
+.form h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.form p{
+	font-size: 15px;
+	font-weight: 300;
+	max-width: 400px;
+	padding: 10px;
+}
+
+.form form input[type=text]{
+	width: 95%;
+	max-width: 480px;
+	margin-top: 8px;
+	height: 58px;
+	padding-left: 8px;
+	line-height: 58px;
+	border: 1px solid rgb(200, 200, 200);
+}
+
+.form form textarea{
+	margin-top: 8px;
+	width: 95%;
+	max-width: 480px;
+	padding: 15px;
+	border: 1px solid rgb(200, 200, 200);
+	height: 160px;
+}
+
+.form form input[type=submit]{
+	border: 0;
+	background-color: #ff703d;
+	width: 165px;
+	height: 44px;
+	font-size: 17px;
+	cursor: pointer;
+	margin-top: 15px;
+	border-radius: 30px;
+	color: #fff;
+}
+
+.map-wraper{
+	padding-left: 40px;
+	float: left;
+	width: 50%;
+	color: #fff;
+}
+
+.map-wraper h2{
+	font-size: 23px;
+	font-weight: 300;
+}
+
+.map-wraper3{
+	margin-top: 10px;
+	width: 100%;
+	max-width: 480px;
+	position: relative;
+}
+.map-wraper2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding-top: 100%;
+}
+
+.map{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 98%;
+	background-color: white;
+	border: 5px solid rgb(200, 200, 200);
+}
+
+footer{
+	padding: 30px;
+	text-align: center;
+	background-color: #0d011b;
+	color: #fff;
+}
+
+
+@media screen and (max-width: 1150px) {
+	.img img{
+		height: 370px;
+	}	
+
+	.chamada1{
+		margin:5%  20%;
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.chamada1{
+		margin:5%  5%;
+	}
+	.img img{
+		height: 360px;
+	}
+
+	.part2{
+		padding: 240px 10px 70px 30px;
+	}
+
+	.sessao3 .part1{
+		padding: 210px 0 115px 0;
+	}
+
+}
+
+@media screen and (max-width: 830px) {
 	.chamada1{
 		max-width: none;
 		width: 100%;
@@ -214,6 +481,17 @@ section.sessao2{
 		text-align: center;
 	}
 
+	.img img{
+		height: 330px;
+	}
+
+	.part2{
+		padding: 180px 10px 70px 30px;
+	}
+
+	.sessao3 .part1{
+		padding: 150px 0 115px 0;
+	}
 	
 }
 
@@ -266,6 +544,8 @@ section.sessao2{
 		text-align: center;
 		float: none;
 		margin: 100px 0;
+		padding-right: 10px;
+		padding-left: 10px;
 	}
 
 	.chamada1 h2{
@@ -310,4 +590,64 @@ section.sessao2{
 		text-align: center;
 	}
 
+	.img img{
+		height: 300px;
+	}
+
+	.form{
+		text-align: center;
+		float: none;
+		width: 90%;
+	}
+
+	.map-wraper{
+		text-align: center;
+		float: none;
+		width: 100%;
+		padding: 0 8%;
+		margin-top: 40px;
+	}
+
+	.map-wraper3{
+		margin-top: 10px;
+		width: 100%;
+		padding-top: 100%;
+		display: inline-block;
+		max-width: none;
+		position: relative;
+	}
+
+	.map-wraper2{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		padding-top: 0;
+	}
+
+	.map{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		margin-bottom: 30px;
+	}
+
+}
+
+
+@media screen and (max-width: 580px) {
+	.img img{
+		height: 250px;
+	}
+
+	.sessao3 .part1{
+		width: 100%;
+	}
+	.sessao3 .part2{
+
+		width: 100%;
+	}
 }
